@@ -20,7 +20,8 @@
       "package": "com.metanoia.fareed"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "output": "single"
     },
     "plugins": [
       [
@@ -43,6 +44,9 @@
       ]
     ],
     "scheme": "fareed",
-    "backgroundColor": "#FFD36E"
+    "backgroundColor": "#FFD36E",
+    "experiments": {
+      "baseUrl": "/Fareed"
+    }
   }
 }

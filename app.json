@@ -1,24 +1,48 @@
 {
   "expo": {
-    "name": "Fareed-Mobile",
-    "slug": "Fareed-Mobile",
+    "name": "Fareed",
+    "slug": "fareed",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.metanoia.fareed"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#FFD36E",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "package": "com.metanoia.fareed"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Fareed uses the microphone so you can practise speaking challenges and hear yourself."
+        }
+      ],
+      "expo-font",
+      "expo-router",
+      "expo-asset",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "backgroundColor": "#FFD36E"
+        }
+      ]
+    ],
+    "scheme": "fareed",
+    "backgroundColor": "#FFD36E"
   }
 }
